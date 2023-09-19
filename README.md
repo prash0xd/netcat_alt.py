@@ -34,13 +34,17 @@ python netcat.py -l -p 5555
 python netcat.py -t 192.168.1.108 -p 5555
 
 ### Execute a command on the target:
+
 python netcat.py -t 192.168.1.108 -p 5555 -e "cat /etc/passwd"
 
 ### Upload a file to the target:
+
 python netcat.py -t 192.168.1.108 -p 5555 -u /path/to/local/file.txt
 
 ### Start an interactive shell on the target:
+
 python netcat.py -t 192.168.1.108 -p 5555 -c
 
 ### For more options and details, refer to the command-line help:
+
 python netcat.py -h
